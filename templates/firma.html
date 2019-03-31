@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+<meta charset="UTF-8">
+<title>Libro de visitas</title>
 </head>
 <body>
-$END$
+<form method="POST" action="{{ url_for('firma')}}">
+    <input type="text" name="nombre" maxlength="30">
+    <textarea name="comentario" maxlength="5000"></textarea>
+    <input type="submit" value="Firme"/>
+</form>
 </body>
 </html>
