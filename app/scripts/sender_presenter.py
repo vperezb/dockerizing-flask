@@ -10,7 +10,7 @@ from firebase_admin import messaging, credentials
 
 
 def __initialize_app(credentials_file_path):
-    return firebase_admin.initialize_app(credentials.Certificate(credentials_file_path), name='track_var_name')
+    return firebase_admin.initialize_app(credentials.Certificate(credentials_file_path))
 
 
 def send_to_token(token, data, app, validate_only=True):

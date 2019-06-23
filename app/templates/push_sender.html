@@ -7,11 +7,11 @@
         <h4>Send push to token</h4>
         <form method="POST" action="{{ url_for('send_push_by_token')}}">
             <div class="input-field col s12">
-                <input id="fcm_token" type="text">
+                <input name="fcm_token" id="fcm_token" type="text">
                 <label for="fcm_token">FCM token</label>
             </div>
             <div class="input-field col s12">
-                    <textarea id="push_data" class="materialize-textarea" value=""></textarea>
+                    <textarea name ="push_data" id="push_data" class="materialize-textarea" value=""></textarea>
                     <label for="push_data">Push Data</label>
                     <span class="helper-text" data-error="wrong" data-success="right">Leave blank for defaul object</span>
             </div>
